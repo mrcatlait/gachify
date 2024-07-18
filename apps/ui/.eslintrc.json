@@ -9,7 +9,15 @@
         "*.ts"
       ],
       "parserOptions": {
-        "project": ["tsconfig.json"]
+        "project": true
+      },
+      "settings": {
+        "import/resolver": {
+          "typescript": {
+            "project": true
+          },
+          "node": true
+        }
       },
       "extends": [
         "@gachify/eslint-config",

@@ -17,7 +17,8 @@ export interface DialogConfig<Data = unknown> extends Omit<GlobalDialogConfig, '
 export type JustProps<T extends object> = Pick<
   T,
   {
-    [K in keyof T]: T[K] extends (...args: any[]) => any ? never : K
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    [K in keyof T]: T[K] extends (...args: any[]) => unknown ? never : K
   }[keyof T]
 >
 

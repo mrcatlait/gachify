@@ -10,7 +10,7 @@ import {
   TemplateRef,
   Type,
   ViewContainerRef,
-  ViewRef,
+  ɵViewRef,
 } from '@angular/core'
 import { BehaviorSubject, Subject } from 'rxjs'
 
@@ -183,7 +183,7 @@ export class DialogService {
     return dialogRef.asDialogRef()
   }
 
-  private createDialog(dialogRef: InternalDialogRef, view: ViewRef) {
+  private createDialog(dialogRef: InternalDialogRef, view: ɵViewRef<unknown>) {
     return createComponent(DialogComponent, {
       elementInjector: Injector.create({
         providers: [
@@ -193,7 +193,7 @@ export class DialogService {
           },
           {
             provide: NODES_TO_INSERT,
-            useValue: (view as any).rootNodes,
+            useValue: view.rootNodes,
           },
         ],
         parent: this.injector,

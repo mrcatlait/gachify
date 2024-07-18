@@ -8,10 +8,10 @@ fileGroups:
     - 'angular.*'
   integration-tests:
     - 'integration-tests/**/*'
-    - '/cypress.config.ts'
+    - 'cypress.config.ts'
   configs:
-    - '/*.{js,json,yml,yaml}'
-    - '/.prettierrc'
+    - '*.{js,json,yml,yaml}'
+    - '.prettierrc'
 
 tasks:
   start:
