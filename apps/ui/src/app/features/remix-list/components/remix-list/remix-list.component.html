@@ -1,0 +1,16 @@
+<h2 class="display-m">Remixes</h2>
+
+<div
+  #container
+  class="gachi-remix-popular-container"
+>
+  @for (remix of remixes(); track remix.id) {
+    <gachi-remix-list-item [remix]="remix" />
+  }
+
+  @if (loading()) {
+    @for (n of numSequence(12); track n) {
+      <gachi-remix-list-item-skeleton />
+    }
+  }
+</div>

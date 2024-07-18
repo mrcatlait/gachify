@@ -1,0 +1,182 @@
+@mixin typography() {
+  :root {
+    --typography-font-family: 'Noto Sans', Roboto, Helvetica, Arial, sans-serif;
+    --typography-font-family-variant: 'Roboto Mono', Roboto, Helvetica, Arial, monospace;
+  }
+
+  body {
+    font-family: var(--typography-font-family);
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--typography-font-family);
+    font-weight: 500;
+    text-wrap: balance;
+  }
+
+  h1,
+  .display-hero {
+    font-size: 112px;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+
+  .display-xl {
+    font-size: 88px;
+    line-height: 96px;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+  
+  .display-l {
+    font-size: 57px;
+    line-height: 64px;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+  
+  .display-m {
+    font-size: 45px;
+    line-height: 60px;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+  
+  .display-s {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+  
+  .headline-l {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+  
+  .headline-m {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+  
+  .headline-s {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+  
+  .title-l {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+  
+  .title-m {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+  
+  .title-s {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+  
+  .label-l {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+  
+  .label-m {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+  
+  .label-s {
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+  
+  p,
+  .body-l {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+  
+  .body-m {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+  
+  .body-s {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  .link {
+    text-decoration: underline;
+    color: var(--color-primary);
+    transition: .3s;
+  
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  hr {
+    border: 0;
+    border-block-start-width: 1px;
+    border-style: solid;
+    border-color: var(--color-outline);
+    width: 100%;
+    margin-block: 1rem;
+    transition: border-color 0.3s ease;
+  }
+
+  .truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

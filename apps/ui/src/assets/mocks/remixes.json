@@ -1,0 +1,298 @@
+{
+  "data": [
+    {
+      "id": "00c2a72b-1496-48f5-aec1-1c103cc8d824",
+      "title": "Modern Talking - Geronimo's Cadillac (♂Right Version♂) Gachi Remix",
+      "artist": {
+        "id": "1",
+        "name": "4lka"
+      },
+      "color": "red",
+      "images": [
+        {
+          "url": "/assets/mocks/00c2a72b-1496-48f5-aec1-1c103cc8d824.png",
+          "size": "small"
+        },
+        {
+          "url": "/assets/mocks/00c2a72b-1496-48f5-aec1-1c103cc8d824.png",
+          "size": "medium"
+        },
+        {
+          "url": "/assets/mocks/00c2a72b-1496-48f5-aec1-1c103cc8d824.png",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "00e26b98-8b52-4e95-a443-0a842d964434",
+      "title": "Король и шут - Кукла ♂Billy♂на (Right version; Gachi Remix; GachiBass)",
+      "artist": {
+        "id": "1",
+        "name": "GachiBasser"
+      },
+      "color": "red",
+      "images": [
+        {
+          "url": "/assets/mocks/00e26b98-8b52-4e95-a443-0a842d964434.png",
+          "size": "small"
+        },
+        {
+          "url": "/assets/mocks/00e26b98-8b52-4e95-a443-0a842d964434.png",
+          "size": "medium"
+        },
+        {
+          "url": "/assets/mocks/00e26b98-8b52-4e95-a443-0a842d964434.png",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "1c978ada-f82f-4c94-840d-24bdc09ed78a",
+      "title": "♂ Deep-Ass Mode - Enjoy The Silence ♂ (Depeche Mode Gachi Right Version)",
+      "artist": {
+        "id": "1",
+        "name": "Deep Dark College Boy"
+      },
+      "color": "red",
+      "images": [
+        {
+          "url": "/assets/mocks/1c978ada-f82f-4c94-840d-24bdc09ed78a.png",
+          "size": "small"
+        },
+        {
+          "url": "/assets/mocks/1c978ada-f82f-4c94-840d-24bdc09ed78a.png",
+          "size": "medium"
+        },
+        {
+          "url": "/assets/mocks/1c978ada-f82f-4c94-840d-24bdc09ed78a.png",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "4",
+      "title": "#4 Король и Шут - Танец Злобного ♂Gay♂ния (Right Version)",
+      "artist": {
+        "id": "1",
+        "name": "GachiMafia"
+      },
+      "color": "red",
+      "images": [
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "small"
+        },
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "medium"
+        },
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "5",
+      "title": "#5 Король и Шут - Танец Злобного ♂Gay♂ния (Right Version)",
+      "artist": {
+        "id": "1",
+        "name": "GachiMafia"
+      },
+      "color": "red",
+      "images": [
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "small"
+        },
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "medium"
+        },
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "6",
+      "title": "#6 Король и Шут - Танец Злобного ♂Gay♂ния (Right Version)",
+      "artist": {
+        "id": "1",
+        "name": "GachiMafia"
+      },
+      "color": "red",
+      "images": [
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "small"
+        },
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "medium"
+        },
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "7",
+      "title": "#7 Король и Шут - Танец Злобного ♂Gay♂ния (Right Version)",
+      "artist": {
+        "id": "1",
+        "name": "GachiMafia"
+      },
+      "color": "red",
+      "images": [
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "small"
+        },
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "medium"
+        },
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "8",
+      "title": "#8 Король и Шут - Танец Злобного ♂Gay♂ния (Right Version)",
+      "artist": {
+        "id": "1",
+        "name": "GachiMafia"
+      },
+      "color": "red",
+      "images": [
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "small"
+        },
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "medium"
+        },
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "9",
+      "title": "#9 Король и Шут - Танец Злобного ♂Gay♂ния (Right Version)",
+      "artist": {
+        "id": "1",
+        "name": "GachiMafia"
+      },
+      "color": "red",
+      "images": [
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "small"
+        },
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "medium"
+        },
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "10",
+      "title": "#10 Король и Шут - Танец Злобного ♂Gay♂ния (Right Version)",
+      "artist": {
+        "id": "1",
+        "name": "GachiMafia"
+      },
+      "color": "red",
+      "images": [
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "small"
+        },
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "medium"
+        },
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "11",
+      "title": "Король и Шут - Танец Злобного ♂Gay♂ния (Right Version)",
+      "artist": {
+        "id": "1",
+        "name": "GachiMafia"
+      },
+      "color": "red",
+      "images": [
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "small"
+        },
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "medium"
+        },
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "12",
+      "title": "Король и Шут - Танец Злобного ♂Gay♂ния (Right Version)",
+      "artist": {
+        "id": "1",
+        "name": "GachiMafia"
+      },
+      "color": "red",
+      "images": [
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "small"
+        },
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "medium"
+        },
+        {
+          "url": "https://yt3.googleusercontent.com/og3xm2GoRLvtqdxnIKzdWLDTHFBufaFKpW1t8Q7Vx0AHyU62twoLspAw4d-1FRdxNj1hSV_kkhM=s576",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    }
+  ],
+  "meta": {
+    "limit": 12,
+    "offset": 0,
+    "count": 12,
+    "total": 500
+  } 
+}

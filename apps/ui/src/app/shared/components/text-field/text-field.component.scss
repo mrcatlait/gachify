@@ -1,0 +1,30 @@
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 2px 0;
+}
+
+label {
+  margin-left: 4px;
+  margin-bottom: 8px;
+}
+
+.gachi-text-field-input-error {
+  outline-color: var(--color-red);
+
+  &:hover:not(:focus-within) {
+    outline-color: rgba(var(--color-red-rgb), .69);
+  }
+
+  &:focus,
+  &:focus-visible {
+    caret-color: var(--color-red);
+    outline-color: var(--color-red);
+  }
+}
+
+.gachi-text-field-error {
+  margin-top: 8px;
+  padding: 0 16px;
+}

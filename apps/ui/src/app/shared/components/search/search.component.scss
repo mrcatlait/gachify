@@ -1,0 +1,61 @@
+$icon-size: 24px;
+
+:host {
+  display: flex;
+}
+
+:host(.gachi-search-active) {
+  .gachi-search-input {
+    display: flex;
+  }
+
+  button {
+    display: none;
+  }
+}
+
+.gachi-search-input {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  height: 48px;
+  background-color: #232526;
+  border-radius: var(--shape-extra-large);
+  padding: 0 16px;
+  min-width: 300px;
+  max-width: 720px;
+
+  &:focus-within {
+    filter: drop-shadow(0 0 24px #000000);
+  }
+}
+
+i {
+  height: $icon-size;
+  width: $icon-size;
+  min-width: $icon-size;
+  font-size: calc($icon-size - 4px);
+}
+
+input {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  caret-color: var(--color-text-high-emphasis);
+  color: var(--color-text-high-emphasis);
+  font-size: 14px;
+  letter-spacing: 0.5px;
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:focus-visible::placeholder {
+    color: transparent;
+  }
+
+  &::placeholder {
+    color: var(--color-text-medium-emphasis);
+  }
+}

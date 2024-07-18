@@ -1,0 +1,148 @@
+{
+  "data": [
+    {
+      "id": "remix-1",
+      "title": "Depeche Mode - Never Let Me Down Again ♂Right Version♂ Gachi Remix",
+      "artist": {
+        "id": "artist-1",
+        "name": "4lka"
+      },
+      "images": [
+        {
+          "url": "small.jpg",
+          "size": "small"
+        },
+        {
+          "url": "medium.jpg",
+          "size": "medium"
+        },
+        {
+          "url": "large.jpg",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "remix-2",
+      "title": "Huey Lewis and the News - Hip To Be Square (Right version) ♂Gachi remix♂",
+      "artist": {
+        "id": "artist-1",
+        "name": "4lka"
+      },
+      "images": [
+        {
+          "url": "small.jpg",
+          "size": "small"
+        },
+        {
+          "url": "medium.jpg",
+          "size": "medium"
+        },
+        {
+          "url": "large.jpg",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "remix-3",
+      "title": "Savage - Don't Cry Tonight ♂Right Version♂ Gachi Remix",
+      "artist": {
+        "id": "artist-1",
+        "name": "4lka"
+      },
+      "images": [
+        {
+          "url": "small.jpg",
+          "size": "small"
+        },
+        {
+          "url": "medium.jpg",
+          "size": "medium"
+        },
+        {
+          "url": "large.jpg",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "remix-4",
+      "title": "ДДТ - Просвистела (♂Right Version♂) Gachi Remix",
+      "artist": {
+        "id": "artist-1",
+        "name": "4lka"
+      },
+      "images": [
+        {
+          "url": "small.jpg",
+          "size": "small"
+        },
+        {
+          "url": "medium.jpg",
+          "size": "medium"
+        },
+        {
+          "url": "large.jpg",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "remix-5",
+      "title": "Mandy Smith - Positive Reaction (♂Right Version♂) Gachi Remix",
+      "artist": {
+        "id": "artist-1",
+        "name": "4lka"
+      },
+      "images": [
+        {
+          "url": "small.jpg",
+          "size": "small"
+        },
+        {
+          "url": "medium.jpg",
+          "size": "medium"
+        },
+        {
+          "url": "large.jpg",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "remix-6",
+      "title": "Modern Talking - Geronimo's Cadillac (♂Right Version♂) Gachi Remix",
+      "artist": {
+        "id": "artist-1",
+        "name": "4lka"
+      },
+      "images": [
+        {
+          "url": "small.jpg",
+          "size": "small"
+        },
+        {
+          "url": "medium.jpg",
+          "size": "medium"
+        },
+        {
+          "url": "large.jpg",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    }
+  ],
+  "meta": {
+    "limit": 50,
+    "offset": 0,
+    "count": 7,
+    "total": 7
+  } 
+}

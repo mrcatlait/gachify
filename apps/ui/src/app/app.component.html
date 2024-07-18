@@ -1,0 +1,11 @@
+@switch (layout$ | async) {
+  @case (layouts.Default) {
+    <gachi-default-layout />
+  }
+  @case (layouts.Blank) {
+    <gachi-blank-layout />
+  }
+  @default {
+    <gachi-default-layout />
+  }
+}

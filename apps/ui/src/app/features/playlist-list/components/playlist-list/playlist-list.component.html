@@ -1,0 +1,7 @@
+<h1>Playlists</h1>
+
+<div class="skeleton"></div>
+
+@for (playlist of playlists(); track playlist) {
+  <gachi-playlist-list-item [playlist]="playlist" />
+}

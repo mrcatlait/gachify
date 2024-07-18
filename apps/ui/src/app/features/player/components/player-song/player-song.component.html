@@ -1,0 +1,27 @@
+@if (currentRemix(); as remix) {
+  <img
+    [src]="remix.images | imageUrl: 'small'"
+    alt=""
+    height="56"
+    width="56"
+  />
+
+  <div class="title">
+    <p
+      [selector]="selectors.remixLabel"
+      [title]="remix.title"
+      class="title-m"
+    >
+      {{ remix.title }}
+    </p>
+
+    <a
+      [routerLink]="['/artists', remix.artist.id]"
+      [selector]="selectors.artistLabel"
+      [title]="remix.artist.name"
+      class="body-m secondary-text"
+    >
+      {{ remix.artist.name }}
+    </a>
+  </div>
+}

@@ -1,0 +1,10 @@
+@mixin hover($background, $overlay) {
+  background: linear-gradient(rgba($overlay, .06), rgba($overlay, .06)),
+              linear-gradient($background, $background);
+}
+
+@mixin focused($background, $overlay) {
+  background: linear-gradient(rgba($overlay, .12), rgba($overlay, .12)),
+              linear-gradient($background, $background);
+  border-color: $overlay;
+}

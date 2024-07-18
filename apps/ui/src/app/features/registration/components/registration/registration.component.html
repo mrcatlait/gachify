@@ -1,0 +1,89 @@
+<section class="gachi-registration-media-sidebar">
+  <gachi-logo />
+
+  <video
+    [autoplay]="true"
+    [loop]="true"
+    [muted]="true"
+  >
+    <source
+      src="/assets/vid/videoplayback.mp4"
+      type="video/mp4"
+    />
+  </video>
+</section>
+
+<section class="gachi-registration-form-sidebar">
+  <div class="gachi-registration-form-content">
+    <h1
+      [selector]="selectors.titleLabel"
+      class="headline-l"
+    >
+      Sign up to Gachify
+    </h1>
+
+    <div class="gachi-registration-content-error-banner">
+      <p *ngIf="usernameTaken()">Username has already been taken</p>
+      <p *ngIf="emailTaken()">Email has already been taken</p>
+    </div>
+
+    <form
+      [formGroup]="form"
+      autocomplete="off"
+    >
+      <gachi-text-field
+        [selector]="selectors.emailTextField"
+        formControlName="email"
+        label="Email"
+        type="email"
+      />
+
+      <gachi-text-field
+        [selector]="selectors.passwordTextField"
+        formControlName="password"
+        label="Password"
+        type="password"
+      />
+
+      <gachi-text-field
+        [selector]="selectors.usernameTextField"
+        formControlName="username"
+        label="Username"
+      />
+
+      <!-- <button
+        [attr.aria-pressed]="hide"
+        aria-label="Show password"
+        class="icon"
+        type="button"
+        (click)="hide = !hide"
+      >
+        <i>{{ hide ? 'visibility_off' : 'visibility' }}</i>
+      </button> -->
+
+      <button
+        [disabled]="loading()"
+        [selector]="selectors.submitButton"
+        class="gachi-registration-content-submit-button filled"
+        type="submit"
+        (click)="handleSubmit()"
+      >
+        Create Account
+      </button>
+    </form>
+
+    <p
+      [selector]="selectors.hasAccountLabel"
+      class="body-m"
+    >
+      Already have an account?
+      <a
+        [selector]="selectors.loginLink"
+        class="link"
+        routerLink="/login"
+      >
+        Sign In
+      </a>
+    </p>
+  </div>
+</section>

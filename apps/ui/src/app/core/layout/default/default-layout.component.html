@@ -1,0 +1,15 @@
+<header
+  *isAuthenticated
+  class="gachi-header"
+></header>
+
+<main [class]="{ hidden: isVisualizerOpen() }">
+  <router-outlet />
+</main>
+
+<gachi-visualizer [class]="{ visible: isVisualizerOpen() }" />
+
+@if (playerActive()) {
+  <div class="gachi-default-layout-player-gutter"></div>
+  <gachi-player />
+}

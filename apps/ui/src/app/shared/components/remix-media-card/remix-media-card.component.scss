@@ -1,0 +1,49 @@
+.gachi-remix-media-card {
+  display: flex;
+  flex-direction: column;
+
+  img {
+    border-radius: var(--shape-extra-large);
+  }
+
+  a:hover,
+  h3:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+.gachi-remix-media-card-image {
+  cursor: pointer;
+  position: relative;
+  width: 256px;
+  height: 256px;
+
+  button {
+    position: absolute;
+    bottom: 16px;
+    visibility: hidden;
+    right: 16px;
+    background-color: white;
+    color: var(--color-surface);
+  }
+
+  &:hover button {
+    visibility: visible;
+  }
+
+  &:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--shape-medium);
+    background: linear-gradient(180deg, rgba(0,0,0,.69) 0%, rgba(255,255,255,0) 50%);
+  }
+}
+
+.gachi-remix-media-card-content {
+  margin-top: 8px;
+}

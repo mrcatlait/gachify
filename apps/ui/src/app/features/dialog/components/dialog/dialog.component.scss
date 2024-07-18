@@ -1,0 +1,65 @@
+.gachi-dialog-content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+
+  @keyframes dialog-open {
+    0% {
+      transform: translateX(50px);
+    }
+
+    100% {
+      transform: none;
+    }
+  }
+
+  animation: dialog-open 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  border-radius: var(--shape-extra-large);
+  box-sizing: border-box;
+
+  box-shadow: var(--dialog-content-box-shadow, 0px 11px 19px rgba(15, 20, 58, 0.14));
+  background-color: #1E1E1E;
+  color: var(--color-text-high-emphasis);
+
+  padding: 24px;
+
+  max-height: min(560px, calc(100% - 48px));
+  max-width: min(560px, calc(100% - 48px));
+  min-height: 140px;
+  min-width: 280px;
+}
+
+.gachi-dialog-backdrop {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(var(--color-surface-rgb), .69);
+
+  animation: dialog-open-backdrop 0.3s;
+
+  @keyframes dialog-open-backdrop {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.gachi-dialog-actions {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+}

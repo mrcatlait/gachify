@@ -1,0 +1,170 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 12px;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+$size: 64px;
+$arrow-width: calc(#{$size} * 0.50);
+$arrow-height: calc(#{$size} * 0.2);
+$arrow-shape: 2px;
+
+$circle-width: 12px;
+
+$line-width: calc(#{$size} * 0.2);
+$line-height: calc(#{$size} * 0.50);
+
+$elevation: 10;
+
+.male-symbol {
+  display: flex;
+  position: relative;
+  width: $size;
+  height: $size;
+
+  animation: rotate 2s linear;
+
+  .doughnut {
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    z-index: $elevation;
+    border: #{$circle-width} solid var(--color-primary);
+  }
+
+  // Required only for arrow animation
+  .circle {
+    position: absolute;
+    left: $circle-width;
+    top: $circle-width;
+    width: calc(#{$size} - #{$circle-width * 2});
+    height: calc(#{$size} - #{$circle-width * 2});
+    background-color: var(--color-surface);
+    border-radius: 50%;
+    z-index: calc(#{$elevation} - 1);
+  }
+
+  .arrow {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    animation: grow 2s ease-in;
+    z-index: calc(#{$elevation} - 2);
+
+    right: calc((#{$arrow-width} + #{$line-width}) / -2.5);
+    top: calc((#{$arrow-width} + #{$line-width}) / -2.5);
+  }
+
+  .triangle {
+    display: flex;
+    position: relative;
+
+    &::before {
+      content: '';
+      grid-area: 1/1;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: calc(#{$arrow-height} - 1px);
+      width: calc(#{$arrow-width} - #{$arrow-height} + 1px);
+      height: $arrow-height;
+      background-color: var(--color-primary);
+      border-radius: $arrow-shape 0 0 $arrow-shape;
+      animation: grow-triangle-before 2s ease-in;
+    }
+
+    &::after {
+      content: '';
+      grid-area: 1/1;
+      display: block;
+      width: $arrow-height;
+      height: $arrow-width;
+      background-color: var(--color-primary);
+      border-radius: 0 $arrow-shape $arrow-shape $arrow-shape;
+      animation: grow-triangle-after 2s ease-in;
+    }
+  }
+
+  .line {
+    position: absolute;
+    right: calc(#{$line-height} / 2);
+    top: calc(#{$line-width} / 2);
+    width: $line-width;
+    height: $line-height;
+    background-color: var(--color-primary);
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes grow {
+  0% {
+    right: #{$line-width};
+    top: #{$line-width};
+  }
+  75%,
+  100% {
+    right: calc((#{$arrow-width} + #{$line-width}) / -2.5);
+    top: calc((#{$arrow-width} + #{$line-width}) / -2.5);
+  }
+}
+
+@keyframes grow-triangle-before {
+  0% {
+    width: calc(#{$arrow-height} + 1px);
+  }
+  75%,
+  100% {
+    width: calc(#{$arrow-width} - #{$arrow-height} + 1px);
+  }
+}
+
+@keyframes grow-triangle-after {
+  0% {
+    height: calc(#{$arrow-height} * 2);;
+  }
+  75%,
+  100% {
+    height: $arrow-width;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(110deg);
+  }
+  85% {
+    transform: rotate(-12deg);
+  }
+  90% {
+    transform: rotate(0deg);
+  }
+  95% {
+    transform: rotate(-6deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+h1 {
+  animation: fade-in 2s ease-in;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  0%,
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "data": [
+    {
+      "id": "artist-1",
+      "name": "4lka",
+      "images": [
+        {
+          "url": "small.jpg",
+          "size": "small"
+        },
+        {
+          "url": "medium.jpg",
+          "size": "medium"
+        }
+      ]
+    },
+    {
+      "id": "artist-2",
+      "name": "GachiBasser",
+      "images": [
+        {
+          "url": "small.jpg",
+          "size": "small"
+        },
+        {
+          "url": "medium.jpg",
+          "size": "medium"
+        }
+      ]
+    },
+    {
+      "id": "artist-3",
+      "name": "Deep Dark College Boy",
+      "images": [
+        {
+          "url": "small.jpg",
+          "size": "small"
+        },
+        {
+          "url": "medium.jpg",
+          "size": "medium"
+        }
+      ]
+    },
+    {
+      "id": "artist-4",
+      "name": "GachiMafia",
+      "images": [
+        {
+          "url": "small.jpg",
+          "size": "small"
+        },
+        {
+          "url": "medium.jpg",
+          "size": "medium"
+        }
+      ]
+    },
+    {
+      "id": "artist-5",
+      "name": "duyui",
+      "images": [
+        {
+          "url": "small.jpg",
+          "size": "small"
+        },
+        {
+          "url": "medium.jpg",
+          "size": "medium"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "page": 1,
+    "take": 5,
+    "itemCount": 5,
+    "pageCount": 1
+  } 
+}

@@ -1,0 +1,19 @@
+<h2 class="headline-m">Remixes</h2>
+
+<div
+  [selector]="selectors.remixContainer"
+  class="gachi-artist-details-remixes-container"
+>
+  @if (loading()) {
+    @for (n of numSequence(5); track n) {
+      <gachi-remix-list-item-skeleton />
+    }
+  } @else {
+    @for (remix of remixes(); track remix.id) {
+      <gachi-remix-list-item
+        [queue]="queue()"
+        [remix]="remix"
+      />
+    }
+  }
+</div>

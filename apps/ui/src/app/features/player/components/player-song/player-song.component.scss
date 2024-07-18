@@ -1,0 +1,32 @@
+$size: 56px;
+
+:host {
+  width: 240px;
+  height: $size;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: $size;
+  height: $size;
+  object-fit: cover;
+  border-radius: var(--shape-small);
+  margin-right: 16px;
+}
+
+.title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  & > p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  & > a:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,70 @@
+<div
+  [class.gachi-remix-card-active]="isCurrentRemix()"
+  [class.gachi-remix-card-elevated]="variant === 'elevated'"
+  [selector]="selectors.remixCard"
+  class="gachi-remix-card"
+>
+  <div class="gachi-remix-card-image">
+    <img
+      [selector]="selectors.remixImage"
+      [src]="remix.images | imageUrl: 'small'"
+      alt=""
+      height="56"
+      width="56"
+    />
+
+    <button
+      [selector]="selectors.playButton"
+      class="icon"
+      (click)="handleTogglePlay()"
+    >
+      <gachi-play-icon [isPlaying]="isCurrentRemix()" />
+    </button>
+  </div>
+
+  <div class="gachi-remix-card-title">
+    <h3
+      [attr.tabindex]="false"
+      [selector]="selectors.remixLabel"
+      [title]="remix.title"
+      class="title-m truncate"
+      (click)="handleTogglePlay()"
+      (keyup)="handleTogglePlay()"
+    >
+      {{ remix.title }}
+    </h3>
+
+    <a
+      [routerLink]="['/artists', remix.artist.id]"
+      [selector]="selectors.artistLabel"
+      [title]="remix.artist.name"
+      class="title-s truncate secondary-text"
+    >
+      {{ remix.artist.name }}
+    </a>
+  </div>
+
+  <div class="gachi-remix-card-actions">
+    <button
+      [selector]="selectors.menuButton"
+      class="icon"
+      (click)="menu.open($event)"
+    >
+      <i>more_vert</i>
+    </button>
+  </div>
+
+  <gachi-menu #menu>
+    <ul>
+      <li>Play</li>
+
+      <li>Add to library</li>
+      <li>Add to playlist</li>
+
+      <li>Play next</li>
+      <li>Play last</li>
+
+      <li>Go to artist</li>
+    </ul>
+  </gachi-menu>
+</div>

@@ -1,0 +1,23 @@
+<span
+  [selector]="selectors.currentTimeLabel"
+  class="label-l"
+>
+  {{ currentTime() | duration }}
+</span>
+
+<input
+  [max]="duration()"
+  [selector]="selectors.playbackSlider"
+  [value]="currentTime()"
+  aria-label="Playback"
+  min="0"
+  slider
+  (input)="seek($event)"
+/>
+
+<span
+  [selector]="selectors.totalTimeLabel"
+  class="label-l"
+>
+  {{ duration() | duration }}
+</span>

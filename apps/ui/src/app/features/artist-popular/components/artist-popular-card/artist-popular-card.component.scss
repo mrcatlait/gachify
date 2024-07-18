@@ -1,0 +1,30 @@
+.gachi-artist-popular-card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    border-radius: var(--shape-full);
+  }
+
+  &:hover img {
+    filter: brightness(.69);
+  }
+}
+
+
+
+.gachi-artist-popular-card-title {
+  flex-grow: 1;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,12 @@
+:host {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  gap: 48px;
+  padding: 0 32px;
+  background-color: var(--color-surface-container);
+}
+
+gachi-player-playback {
+  flex-grow: 1;
+}

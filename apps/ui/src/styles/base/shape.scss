@@ -1,0 +1,10 @@
+@mixin shape() {
+  :root {
+    --shape-extra-small: 4px;
+    --shape-small: 8px;
+    --shape-medium: 12px;
+    --shape-large: 16px;
+    --shape-extra-large: 20px;
+    --shape-full: 50%;
+  }
+}

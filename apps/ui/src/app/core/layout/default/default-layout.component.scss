@@ -1,0 +1,46 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  flex-shrink: 0;
+}
+
+main {
+  flex-grow: 1;
+  margin: 96px auto 0 auto;
+  max-width: 1488px;
+  padding: 0 24px;
+  width: 100%;
+}
+
+gachi-visualizer {
+  visibility: hidden;
+  position: fixed;
+  top: 96px;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+}
+
+.gachi-default-layout-player-gutter {
+  margin-top: 80px;
+}
+
+gachi-player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}

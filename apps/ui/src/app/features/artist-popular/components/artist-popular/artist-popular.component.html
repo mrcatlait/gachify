@@ -1,0 +1,24 @@
+<h2
+  [selector]="selectors.titleLabel"
+  class="display-m"
+>
+  Popular artists
+</h2>
+
+<div
+  [selector]="selectors.artistContainer"
+  class="gachi-artist-popular-container"
+>
+  @if (loading()) {
+    @for (n of numSequence(6); track n) {
+      <gachi-artist-popular-card-skeleton />
+    }
+  } @else {
+    @for (artist of artists(); track artist.id) {
+      <gachi-artist-popular-card
+        [artist]="artist"
+        [selector]="selectors.artistCard"
+      />
+    }
+  }
+</div>

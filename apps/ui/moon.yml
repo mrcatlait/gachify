@@ -1,0 +1,57 @@
+stack: 'frontend'
+type: 'application'
+language: 'typescript'
+
+fileGroups:
+  app:
+    - 'src/**/*'
+    - 'angular.*'
+  integration-tests:
+    - 'integration-tests/**/*'
+    - '/cypress.config.ts'
+  configs:
+    - '/*.{js,json,yml,yaml}'
+    - '/.prettierrc'
+
+tasks:
+  start:
+    command: 'ng serve'
+    local: true
+
+  build:
+    command: 'ng build'
+    inputs:
+      - '@group(app)'
+    outputs:
+      - 'dist'
+
+  lint:
+    command: 'ng lint'
+    inputs:
+      - '@group(app)'
+      - '@group(configs)'
+
+  test:
+    deps:
+      - 'test-unit'
+      - 'test-integration'
+
+  test-unit:
+    command: 'vitest'
+    inputs:
+      - '@group(app)'
+    outputs:
+      - 'coverage'
+      - 'reports/unit'
+
+  test-integration:
+    command: 
+      - 'start-server-and-test'
+      - "'ng serve --configuration=production'"
+      - 'http://localhost:4200'
+      - "'cypress run --e2e --browser chrome'"
+    inputs:
+      - '@group(app)'
+      - '@group(integration-tests)'
+    outputs:
+      - 'reports/integration'

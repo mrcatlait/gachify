@@ -1,0 +1,98 @@
+@use 'abstracts' as abstracts;
+
+@mixin button() {
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    color: var(--color-text-high-emphasis);
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--typography-font-family);
+    transition: background-color .3s ease-in;
+
+    &:hover {
+      background-color: rgba(var(--color-text-high-emphasis-rgba), .08);
+    }
+
+    &:disabled {
+      cursor: default;
+      color: rgba(var(--color-text-high-emphasis-rgba), .4);
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    &.outlined {
+      border: 1px solid var(--color-outline);
+      color: var(--color-text-high-emphasis);
+
+      &:hover {
+        background-color: rgba(var(--color-text-high-emphasis-rgba), .08);
+      }
+    }
+
+    &.filled {
+      color: #090A0D;
+      background: var(--color-primary);
+
+      &:hover {
+        background-color: rgba(var(--color-primary-rgb), .8);
+      }
+    
+      &:focus-visible {
+        background-color: rgba(var(--color-primary-rgba), .7);
+      }
+    }
+
+    &.filled-tonal {
+      color: var(--color-text-high-emphasis);
+      background: #313131;
+
+      &:hover {
+        background-color: rgba(var(--color-text-high-emphasis-rgba), .08);
+      }
+    
+      &:focus-visible {
+        background-color: rgba(var(--color-text-high-emphasis-rgba), .16);
+      }
+    }
+  }
+
+  button:not(.icon) {
+    height: 40px;
+    min-width: 72px;
+    padding: 0 12px;
+    border-radius: var(--shape-extra-large);
+    gap: 8px;
+
+    &.outlined,
+    &.filled,
+    &.filled-tonal {
+      padding: 0 24px;
+
+      i {
+        margin-left: -8px;
+      }
+    }
+
+    &.button-large {
+      height: 48px;
+      padding: 0 24px;
+    }
+  }
+
+  button.icon {
+    height: 40px;
+    min-height: 40px;
+    width: 40px;
+    min-width: 40px;
+    font-size: 20px;
+    justify-content: center;
+    border-radius: var(--shape-full);
+  }
+}

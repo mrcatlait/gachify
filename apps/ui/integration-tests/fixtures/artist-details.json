@@ -1,0 +1,14 @@
+{
+  "id": "artist-1",
+  "name": "4lka",
+  "images": [
+    {
+      "url": "small.jpg",
+      "size": "small"
+    },
+    {
+      "url": "medium.jpg",
+      "size": "medium"
+    }
+  ]
+}

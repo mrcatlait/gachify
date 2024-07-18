@@ -1,0 +1,53 @@
+$glow-radius: 48px;
+
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gachi-visualizer-media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--shape-extra-large);
+  z-index: 2;
+  transition: filter .3s ease-out;
+
+  &.paused {
+    filter: grayscale(1);
+  }
+}
+
+.gachi-visualizer-media-container {
+  position: relative;
+}
+
+.gachi-visualizer-media-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .69;
+  filter: blur(64px);
+  z-index: -1;
+  transition: opacity .3s ease-in;
+
+  &.paused {
+    opacity: 0;
+  }
+}
+
+.gachi-visualizer-media-actions {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: -96px;
+  width: 96px;
+}

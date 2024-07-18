@@ -1,0 +1,32 @@
+<i icon>person_add</i>
+
+<span headline>Invite Friends to Gachify</span>
+
+<div content>
+  <span>
+    Share the fun of Gachimuchi remixes with your friends! Use the form below to send them an invitation to join
+    Gachify.
+  </span>
+
+  <form
+    [formGroup]="form"
+    autocomplete="off"
+  >
+    <gachi-text-field
+      formControlName="email"
+      placeholder="Email address"
+      type="email"
+    />
+  </form>
+</div>
+
+<div actions>
+  <button
+    class="primary"
+    dialogClose
+  >
+    Close
+  </button>
+
+  <button class="primary">Send invite</button>
+</div>

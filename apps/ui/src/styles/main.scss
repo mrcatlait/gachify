@@ -1,0 +1,19 @@
+@use 'base' as base;
+@use 'components' as components;
+@use 'themes' as themes;
+
+// Base styles
+@include base.reset();
+@include base.shape();
+@include base.typography();
+
+// Include custom components
+@include components.button();
+@include components.fieldset();
+@include components.icon();
+@include components.input();
+@include components.slider();
+@include components.skeleton();
+
+// Theme
+@include themes.default();

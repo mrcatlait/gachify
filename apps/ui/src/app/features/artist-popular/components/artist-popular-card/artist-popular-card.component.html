@@ -1,0 +1,14 @@
+<a [routerLink]="['artists', artist.id]">
+  <div class="gachi-artist-popular-card">
+    <img
+      [src]="artist.images | imageUrl: 'medium'"
+      alt=""
+      height="256"
+      width="256"
+    />
+
+    <div class="gachi-artist-popular-card-title">
+      <span class="title-m truncate primary-text">{{ artist.name }}</span>
+    </div>
+  </div>
+</a>

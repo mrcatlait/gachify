@@ -1,0 +1,57 @@
+<button
+  [class]="{ inactive: !shuffle() }"
+  [selector]="selectors.shuffleButton"
+  aria-label="Shuffle"
+  class="icon"
+  (click)="handleToggleShuffle()"
+>
+  <i>shuffle</i>
+</button>
+
+<button
+  [disabled]="!hasPrevious()"
+  [selector]="selectors.skipPreviousButton"
+  aria-label="Previous"
+  class="icon"
+  (click)="handleSkipPrevious()"
+>
+  <i>skip_previous</i>
+</button>
+
+<button
+  [selector]="selectors.playButton"
+  aria-label="Play"
+  class="icon player-controls-button"
+  (click)="handleTogglePlay()"
+>
+  <gachi-play-icon [isPlaying]="true" />
+</button>
+
+<button
+  [disabled]="!hasNext()"
+  [selector]="selectors.skipNextButton"
+  aria-label="Next"
+  class="icon"
+  (click)="handleSkipNext()"
+>
+  <i>skip_next</i>
+</button>
+
+<button
+  [selector]="selectors.repeatButton"
+  aria-label="Repeat"
+  class="icon"
+  (click)="handleToggleRepeat()"
+>
+  @switch (repeat()) {
+    @case (repeatOption.None) {
+      <i class="inactive">repeat</i>
+    }
+    @case (repeatOption.All) {
+      <i>repeat</i>
+    }
+    @case (repeatOption.Single) {
+      <i>repeat_one</i>
+    }
+  }
+</button>

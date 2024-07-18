@@ -1,0 +1,27 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  margin: 64px 0;
+}
+
+.gachi-remix-new-releases-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 256px);
+  grid-template-rows: auto;
+  grid-auto-rows: 0px;
+  overflow: hidden;
+  margin-top: 28px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@keyframes scale-up {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

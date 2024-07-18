@@ -1,0 +1,18 @@
+<button
+  [selector]="selectors.volumeButton"
+  aria-label="Toggle mute"
+  class="icon"
+  (click)="toggleMute()"
+>
+  <i>{{ icon() }}</i>
+</button>
+
+<input
+  [max]="100"
+  [min]="0"
+  [selector]="selectors.volumeSlider"
+  [value]="volume()"
+  aria-label="Volume"
+  slider
+  (input)="changeVolume($event)"
+/>

@@ -1,0 +1,53 @@
+$track-height: 12px;
+$slider-height: 4px;
+
+@mixin slider() {
+  input.slider {
+    -webkit-appearance: none;
+    appearance: none; 
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    border-radius: $slider-height;
+    height: $slider-height;
+    background: var(--color-outline);
+
+    &::-webkit-slider-thumb {
+      appearance: none;
+
+      height: $track-height;
+      width: $track-height;
+      background-color: var(--color-text-high-emphasis);
+      border-radius: 50%;
+      border: none;
+      transition: .2s ease-in-out;
+    }
+
+    &::-moz-range-thumb {
+      height: $track-height;
+      width: $track-height;
+      background-color: var(--color-text-high-emphasis);
+      border-radius: 50%;
+      border: none;
+      transition: .2s ease-in-out;
+    }
+
+    &::-webkit-slider-thumb:hover {
+      box-shadow: 0 0 0 $track-height rgba(var(--color-primary-rgb), .1)
+    }
+
+    &:active::-webkit-slider-thumb,
+    &:focus::-webkit-slider-thumb {
+      box-shadow: 0 0 0 $track-height rgba(var(--color-primary-rgb), .2)
+    }
+
+    &::-moz-range-thumb:hover {
+      box-shadow: 0 0 0 $track-height rgba(var(--color-primary-rgb), .1)
+    }
+  
+    &:active::-moz-range-thumb,
+    &:focus::-moz-range-thumb {
+      box-shadow: 0 0 0 $track-height rgba(var(--color-primary-rgb), .2)    
+    }
+  }
+}

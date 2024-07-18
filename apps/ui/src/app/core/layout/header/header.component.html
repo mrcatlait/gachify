@@ -1,0 +1,60 @@
+<ul class="gachi-header-menu body-l">
+  <li>
+    <a
+      #home="routerLinkActive"
+      [routerLinkActiveOptions]="{ exact: true }"
+      [selector]="selectors.homeLink"
+      routerLink=""
+      routerLinkActive="active"
+    >
+      Home
+    </a>
+  </li>
+
+  <li>
+    <a
+      #songs="routerLinkActive"
+      [selector]="selectors.exploreLink"
+      routerLink="/remixes"
+      routerLinkActive="active"
+    >
+      Explore
+    </a>
+  </li>
+
+  <li>
+    <a
+      #artists="routerLinkActive"
+      [selector]="selectors.searchLink"
+      routerLink="/search"
+      routerLinkActive="active"
+    >
+      Search
+    </a>
+  </li>
+
+  <li>
+    <a
+      #library="routerLinkActive"
+      [selector]="selectors.libraryLink"
+      routerLink="/library"
+      routerLinkActive="active"
+    >
+      Library
+    </a>
+  </li>
+</ul>
+
+<a
+  aria-label="Go to home page"
+  class="gachi-header-logo"
+  routerLink="/"
+>
+  <gachi-logo />
+</a>
+
+<div class="gachi-header-right-panel">
+  <!-- <gachi-search /> -->
+
+  <gachi-invite />
+</div>

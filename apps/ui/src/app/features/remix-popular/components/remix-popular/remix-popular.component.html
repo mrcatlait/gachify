@@ -1,0 +1,24 @@
+<h2
+  [selector]="selectors.titleLabel"
+  class="display-m"
+>
+  Popular remixes
+</h2>
+
+<div
+  [selector]="selectors.remixContainer"
+  class="gachi-remix-popular-container"
+>
+  @if (loading()) {
+    @for (n of numSequence(12); track n) {
+      <gachi-remix-card-skeleton />
+    }
+  } @else {
+    @for (remix of remixes(); track remix.id) {
+      <gachi-remix-card
+        [queue]="queue()"
+        [remix]="remix"
+      />
+    }
+  }
+</div>

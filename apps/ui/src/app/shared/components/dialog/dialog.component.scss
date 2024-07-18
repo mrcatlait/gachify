@@ -1,0 +1,104 @@
+$elevation-level: 3;
+
+dialog {
+  background-color: transparent;
+  padding: 0;
+  border-radius: var(--shape-extra-large);
+  border-width: 0;
+  overflow: visible;
+
+  max-height: min(560px, calc(100% - 48px));
+  max-width: min(560px, calc(100% - 48px));
+  min-height: 140px;
+  min-width: 280px;
+
+  .container {
+    background-color: #1E1E1E;
+    color: var(--color-text-high-emphasis);
+    border-radius: inherit;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  i {
+    margin: 0 auto;
+    color: var(--color-primary);
+  }
+
+  i + h2 {
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 16px;
+  }
+
+  .content{
+    flex-grow: 1;
+    overflow: scroll;
+  }
+
+  .actions > div {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    margin-top: 24px;
+  }
+}
+
+dialog {
+  &::before,
+  &::after {
+    content: '';
+    pointer-events: none;
+    border-radius: inherit;
+    inset: 0;
+    z-index: 11;
+    position: absolute;
+  }
+
+  &::before {
+    $level1-y: clamp(0, $elevation-level, 1);
+    $level4-y: clamp(0, $elevation-level - 3, 1);
+    $level5-y: calc(2 * clamp(0, $elevation-level - 4, 1));
+
+    $y: calc(1px * ($level1-y + $level4-y + $level5-y));
+
+    $level1-blur: calc(2 * clamp(0, $elevation-level, 1));
+    $level3-blur: clamp(0, $elevation-level - 2, 1);
+    $level5-blur: clamp(0, $elevation-level - 4, 1);
+
+    $blur: calc(1px * ($level1-blur + $level3-blur + $level5-blur));
+
+    box-shadow: 0px $y $blur 0px rgba(0, 0, 0, .3);
+  }
+
+  &::after {
+    $level1-y: clamp(0, $elevation-level, 1);
+    $level2-y: clamp(0, $elevation-level - 1, 1);
+    $level3to5-y: calc(2 * clamp(0, $elevation-level - 2, 3));
+
+    $y: calc(1px * ($level1-y + $level2-y + $level3to5-y));
+
+    $level1to2-blur: calc(3 * clamp(0, $elevation-level, 2));
+    $level3to5-blur: calc(2 * clamp(0, $elevation-level - 2, 3));
+
+    $blur: calc(1px * ($level1to2-blur + $level3to5-blur));
+
+    $level1to4-spread: clamp(0, $elevation-level, 4);
+    $level5-spread: calc(2 * clamp(0, $elevation-level - 4, 1));
+
+    $spread: calc(1px * ($level1to4-spread + $level5-spread));
+
+    box-shadow: 0px $y $blur $spread rgba(0, 0, 0, .15);
+  }
+}
+
+::backdrop {
+  background-color: rgba(var(--color-surface-rgb), .69);
+  z-index: 10;
+}

@@ -1,0 +1,22 @@
+@use 'abstracts' as abstracts;
+
+.gachi-remix-card-skeleton {
+  display: flex;
+  gap: 16px;
+  padding: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.gachi-remix-card-skeleton-image gachi-skeleton {
+  border-radius: var(--shape-medium);
+}
+
+.gachi-remix-card-skeleton-title {
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 8px;
+}

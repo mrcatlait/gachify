@@ -1,0 +1,37 @@
+gachi-skeleton {
+  display: block;
+  background-color: #363636;
+  border-radius: var(--shape-small);
+  animation: skeleton-fade-out 2s infinite;
+  height: 20px;
+}
+
+.gachi-skeleton-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 'auto';
+  transform-origin: 0px 55% 0px;
+  transform: scale(1, 0.6);
+
+  &:empty:before {
+    content: ' ';
+  }
+}
+
+.gachi-skeleton-circular {
+  border-radius: var(--shape-full);
+}
+
+@keyframes skeleton-fade-out {
+  0% {
+    opacity: 1;
+  }
+  
+  50% {
+    opacity: 0.4;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}

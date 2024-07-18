@@ -1,0 +1,29 @@
+:host {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 0;
+  min-width: 0;
+}
+
+.gachi-visualizer-queue-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 0;
+  min-width: 0;
+  max-width: 800px;
+}
+
+h2 {
+  margin-bottom: 24px;
+}
+
+.gachi-visualizer-queue-container-remixes {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  min-width: 0;
+  flex-grow: 1;
+  gap: 8px;
+  overflow-y: scroll;
+}

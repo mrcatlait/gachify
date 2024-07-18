@@ -1,0 +1,98 @@
+@use 'abstracts' as abstracts;
+
+$size: 56px;
+
+gachi-remix-list-item {
+  display: grid;
+  align-items: center;
+  height: calc($size + 16px);
+  padding: 0 8px;
+  gap: 16px;
+  grid-template-columns: $size 3fr 1fr 1fr 54px 40px;
+
+  &:not(:first-child) {
+    border-top: 1px solid var(--color-outline);
+  }
+
+  &:hover {
+    @include abstracts.hover(#1E1E1E, #ffffff);
+  }
+}
+
+.gachi-remix-list-item-active {
+  background-color: #363636;
+}
+
+gachi-remix-list-item:hover,
+.gachi-remix-list-item-active {
+  border-radius: var(--shape-medium);
+  border-color: transparent;
+
+  & > .gachi-remix-list-item-image > button {
+    display: flex;
+  }
+}
+
+gachi-remix-list-item:hover + gachi-remix-list-item,
+.gachi-remix-list-item-active,
+.gachi-remix-list-item-active + gachi-remix-list-item {
+  border-color: transparent !important;
+}
+
+.gachi-remix-list-item-image {
+  position: relative;
+  width: $size;
+  height: $size;
+
+  img {
+    border-radius: var(--shape-medium);
+  }
+
+  button {
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    justify-self: center;
+    transform: translate(-50%, -50%);
+    background-color: rgba( var(--color-surface-rgb), .69);
+    transition: background-color .3s ease-in-out;
+
+    &:hover {
+      background-color: rgba( var(--color-surface-rgb), .9);
+    }
+  }
+}
+
+.gachi-remix-list-item-title {
+  cursor: pointer;
+  max-width: fit-content;
+}
+
+.gachi-remix-list-item-artist {
+  max-width: fit-content;
+
+  &:hover {
+    text-decoration: underline; 
+  }
+}
+
+.gachi-remix-list-item-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gachi-remix-list-item-rating-change {
+  display: flex;
+  align-items: center;
+
+  i {
+    font-size: 16px;
+  }
+}
+
+.gachi-remix-list-item-duration {
+  text-align: right;
+}

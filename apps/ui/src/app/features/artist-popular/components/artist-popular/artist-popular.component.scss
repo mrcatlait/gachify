@@ -1,0 +1,16 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  margin: 64px 0;
+}
+
+.gachi-artist-popular-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 256px);
+  grid-template-rows: auto;
+  grid-auto-rows: 0px;
+  overflow: hidden;
+  justify-content: space-between;
+  margin-top: 28px;
+  width: 100%;
+}

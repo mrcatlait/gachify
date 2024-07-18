@@ -1,0 +1,30 @@
+<div class="gachi-remix-media-card">
+  <div class="gachi-remix-media-card-image">
+    <img
+      [alt]="remix.title"
+      [src]="remix.images | imageUrl: 'medium'"
+      height="256"
+      width="256"
+    />
+
+    <button class="icon">
+      <gachi-play-icon [isPlaying]="isCurrentRemix()" />
+    </button>
+  </div>
+
+  <div class="gachi-remix-media-card-content">
+    <h3
+      [title]="remix.title"
+      class="title-m truncate"
+    >
+      {{ remix.title }}
+    </h3>
+    <a
+      [routerLink]="['/artists', remix.artist.id]"
+      [title]="remix.artist.name"
+      class="title-s secondary-text truncate"
+    >
+      {{ remix.artist.name }}
+    </a>
+  </div>
+</div>

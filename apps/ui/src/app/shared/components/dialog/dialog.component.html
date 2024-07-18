@@ -1,0 +1,21 @@
+<ng-container #container />
+
+<ng-template>
+  <dialog #dialog>
+    <div class="container">
+      <ng-content select="[icon]" />
+
+      <h2 class="headline-s">
+        <ng-content select="[headline]" />
+      </h2>
+
+      <div class="content body-m secondary-text">
+        <ng-content select="[content]" />
+      </div>
+
+      <div class="actions">
+        <ng-content select="[actions]" />
+      </div>
+    </div>
+  </dialog>
+</ng-template>

@@ -1,0 +1,25 @@
+<div
+  [style.height.px]="size$ | async"
+  [style.width.px]="size$ | async"
+  class="gachi-visualizer-media-container"
+>
+  <img
+    [class.paused]="!playing()"
+    [selector]="selectors.mediaRemixImage"
+    [src]="currentRemix()?.images | imageUrl: 'large'"
+    alt=""
+    aria-hidden="true"
+    class="gachi-visualizer-media"
+    (click)="handleClick()"
+    (keyup)="handleClick()"
+  />
+
+  <img
+    [class.paused]="!playing()"
+    [selector]="selectors.mediaBackgroundImage"
+    [src]="currentRemix()?.images | imageUrl: 'large'"
+    alt=""
+    aria-hidden="true"
+    class="gachi-visualizer-media-animation"
+  />
+</div>

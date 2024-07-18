@@ -1,0 +1,13 @@
+@use 'abstracts' as abstracts;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 0;
+}
+
+.gachi-artist-details-remixes-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 28px;
+}

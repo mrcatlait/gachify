@@ -1,0 +1,63 @@
+@use '../abstracts' as abstracts;
+
+@mixin default() {
+  :root {
+    --color-primary-900: #005e2d; // white
+    --color-primary-800: #007e44; // white
+    --color-primary-700: #009050;
+    --color-primary-600: #00a25e;
+    --color-primary-500: #00b169;
+    --color-primary-400: #00be7f;
+    --color-primary-300: #04ca96;
+    --color-primary-200: #76d9b3;
+    --color-primary-100: #b0e8d1;
+    --color-primary-50: #dff6ec;
+
+    --color-primary: var(--color-primary-300);
+    --color-primary-rgb: #{abstracts.hex-to-rgb(#04ca96)};
+
+    --color-text-high-emphasis: rgba(255, 255, 255, .96);
+    --color-text-high-emphasis-rgba: #{abstracts.hex-to-rgb(#ffffff)};
+    --color-text-medium-emphasis: rgba(255, 255, 255, .6);
+    --color-text-disabled: rgba(255, 255, 255, .38);
+
+    --color-surface: #101010;
+    --color-surface-rgb: #{abstracts.hex-to-rgb(#101010)};
+    --color-surface-container: #191919;
+
+    --color-outline: rgba(255, 255, 255, .16);
+
+    --color-green: #32D84C;
+    --color-red: #FF443B;
+    --color-red-rgb: #{abstracts.hex-to-rgb(#FF443B)};
+  }
+
+  html {
+    color: var(--color-text-high-emphasis);
+    background-color: var(--color-surface);
+  }
+
+  .primary {
+    color: var(--color-primary);
+  }
+
+  .primary-text {
+    color: var(--color-text-high-emphasis);
+  }
+
+  .secondary-text {
+    color: var(--color-text-medium-emphasis);
+  }
+
+  .disabled-text {
+    color: var(--color-text-disabled);
+  }
+
+  .green {
+    color: var(--color-green);
+  }
+
+  .red {
+    color: var(--color-red);
+  }
+}

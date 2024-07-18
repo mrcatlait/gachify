@@ -1,0 +1,32 @@
+<fieldset>
+  @if (label) {
+    <label
+      [class.red]="message()"
+      [for]="formControlName"
+      [selector]="selectors.fieldLabel"
+      class="body-l"
+    >
+      {{ label }}
+    </label>
+  }
+
+  <input
+    [class.gachi-text-field-input-error]="message()"
+    [disabled]="disabled"
+    [id]="formControlName"
+    [placeholder]="placeholder"
+    [selector]="selectors.fieldInput"
+    [type]="type"
+    [value]="value"
+    (input)="handleInput($event)"
+  />
+
+  @if (message()) {
+    <span
+      [selector]="selectors.errorLabel"
+      class="body-s red gachi-text-field-error"
+    >
+      {{ message() }}
+    </span>
+  }
+</fieldset>

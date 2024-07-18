@@ -1,0 +1,19 @@
+@mixin fieldset() {
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 0;
+  }
+
+  label {
+    // body-l
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0;
+
+    margin-left: 4px;
+    margin-bottom: 8px;
+  }
+}

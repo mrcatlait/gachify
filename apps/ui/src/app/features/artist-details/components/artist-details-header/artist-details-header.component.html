@@ -1,0 +1,52 @@
+<img
+  [selector]="selectors.artistImage"
+  [src]="artist()?.images | imageUrl: 'medium'"
+  alt=""
+  class="gachi-artist-details-header-image"
+  height="256"
+  width="256"
+/>
+
+<div class="gachi-artist-details-header-title">
+  <h1
+    [selector]="selectors.artistNameLabel"
+    class="display-m"
+  >
+    {{ artist()?.name }}
+  </h1>
+
+  <span
+    [selector]="selectors.artistMetadataLabel"
+    class="title-m secondary-text"
+  >
+    {{ total() }} remixes
+  </span>
+
+  <div class="gachi-artist-details-header-actions">
+    <button
+      [selector]="selectors.playButton"
+      aria-label="Play"
+      class="filled"
+      (click)="handleTogglePlay()"
+    >
+      <gachi-play-icon [isPlaying]="isPlaying()" />
+      <gachi-play-label [isPlaying]="isPlaying()" />
+    </button>
+
+    <!-- <button
+      [selector]="selectors.followButton"
+      class="outlined"
+    >
+      <i>heart_plus</i>
+      Follow
+    </button>
+
+    <button
+      [selector]="selectors.youtubeButton"
+      class="outlined"
+    >
+      <i>media_link</i>
+      YouTube
+    </button> -->
+  </div>
+</div>

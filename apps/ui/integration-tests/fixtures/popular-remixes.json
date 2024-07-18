@@ -1,0 +1,286 @@
+{
+  "data": [
+    {
+      "id": "remix-1",
+      "title": "Король и шут - Кукла ♂Billy♂на (Right version; Gachi Remix; GachiBass)",
+      "artist": {
+        "id": "artist-1",
+        "name": "GachiBasser"
+      },
+      "images": [
+        {
+          "url": "small.jpg",
+          "size": "small"
+        },
+        {
+          "url": "medium.jpg",
+          "size": "medium"
+        },
+        {
+          "url": "large.jpg",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "remix-2",
+      "title": "Кипелов - я свободен ♂right version♂ (gachi remix)",
+      "artist": {
+        "id": "artist-2",
+        "name": "Froggo"
+      },
+      "images": [
+        {
+          "url": "small.jpg",
+          "size": "small"
+        },
+        {
+          "url": "medium.jpg",
+          "size": "medium"
+        },
+        {
+          "url": "large.jpg",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "remix-3",
+      "title": "♂Король и Шут - Фокусник♂ (Right version; Gachi Remix; GachiBass)",
+      "artist": {
+        "id": "artist-1",
+        "name": "GachiBasser"
+      },
+      "images": [
+        {
+          "url": "small.jpg",
+          "size": "small"
+        },
+        {
+          "url": "medium.jpg",
+          "size": "medium"
+        },
+        {
+          "url": "large.jpg",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "remix-4",
+      "title": "Ляпис Трубецкой - ♂Воины Света♂(GachiRemix; GachiBass)",
+      "artist": {
+        "id": "artist-1",
+        "name": "GachiBasser"
+      },
+      "images": [
+        {
+          "url": "small.jpg",
+          "size": "small"
+        },
+        {
+          "url": "medium.jpg",
+          "size": "medium"
+        },
+        {
+          "url": "large.jpg",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "remix-5",
+      "title": "Gachi Riki Martin - Livin' lavida loca",
+      "artist": {
+        "id": "artist-3",
+        "name": "Ryuuk"
+      },
+      "images": [
+        {
+          "url": "small.jpg",
+          "size": "small"
+        },
+        {
+          "url": "medium.jpg",
+          "size": "medium"
+        },
+        {
+          "url": "large.jpg",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "remix-6",
+      "title": "Мышь - Twitch (Right Version♂)",
+      "artist": {
+        "id": "artist-4",
+        "name": "iVan Temnoholmov"
+      },
+      "images": [
+        {
+          "url": "small.jpg",
+          "size": "small"
+        },
+        {
+          "url": "medium.jpg",
+          "size": "medium"
+        },
+        {
+          "url": "large.jpg",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "remix-7",
+      "title": "Король и Шут - Танец Злобного ♂Gay♂ния (Right Version)",
+      "artist": {
+        "id": "artist-5",
+        "name": "GachiMafia"
+      },
+      "images": [
+        {
+          "url": "small.jpg",
+          "size": "small"
+        },
+        {
+          "url": "medium.jpg",
+          "size": "medium"
+        },
+        {
+          "url": "large.jpg",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "remix-8",
+      "title": "Eiffel 65 - Blue (Da Ba Dee) (right version♂) Gachi Remix",
+      "artist": {
+        "id": "artist-6",
+        "name": "Резистор Ключик"
+      },
+      "images": [
+        {
+          "url": "small.jpg",
+          "size": "small"
+        },
+        {
+          "url": "medium.jpg",
+          "size": "medium"
+        },
+        {
+          "url": "large.jpg",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "remix-9",
+      "title": "GAYAZOV$ BROTHER$ - Увезите меня на Дип-хаус (Right Version) ♂ Gachi Remix",
+      "artist": {
+        "id": "artist-7",
+        "name": "PROPHETIC WORD 2022"
+      },
+      "images": [
+        {
+          "url": "small.jpg",
+          "size": "small"
+        },
+        {
+          "url": "medium.jpg",
+          "size": "medium"
+        },
+        {
+          "url": "large.jpg",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "remix-10",
+      "title": "♂ Firewatch Palace - Loan Digger ♂",
+      "artist": {
+        "id": "artist-8",
+        "name": "duyui"
+      },
+      "images": [
+        {
+          "url": "small.jpg",
+          "size": "small"
+        },
+        {
+          "url": "medium.jpg",
+          "size": "medium"
+        },
+        {
+          "url": "large.jpg",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "remix-11",
+      "title": "♂ Leave the Gachimuchi on ♂",
+      "artist": {
+        "id": "artist-8",
+        "name": "duyui"
+      },
+      "images": [
+        {
+          "url": "small.jpg",
+          "size": "small"
+        },
+        {
+          "url": "medium.jpg",
+          "size": "medium"
+        },
+        {
+          "url": "large.jpg",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    },
+    {
+      "id": "remix-12",
+      "title": "♂ Hentai - S3RL ♂",
+      "artist": {
+        "id": "artist-8",
+        "name": "duyui"
+      },
+      "images": [
+        {
+          "url": "small.jpg",
+          "size": "small"
+        },
+        {
+          "url": "medium.jpg",
+          "size": "medium"
+        },
+        {
+          "url": "large.jpg",
+          "size": "large"
+        }
+      ],
+      "duration": 198
+    }
+  ],
+  "meta": {
+    "limit": 12,
+    "offset": 0,
+    "count": 12,
+    "total": 500
+  } 
+}

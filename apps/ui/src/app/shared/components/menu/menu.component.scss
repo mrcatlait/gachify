@@ -1,0 +1,12 @@
+.gachi-menu-container {
+  position: fixed;
+  display: flex;
+  background-color: #262626;
+  color: var(--color-text-high-emphasis);
+  border-radius: var(--shape-extra-small);
+  box-shadow: 0px 1px 2px 0px rgba(#000000, .3);
+  padding: 4px 0;
+  min-width: 112px;
+  max-width: 280px;
+  z-index: 10;
+}

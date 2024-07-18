@@ -1,0 +1,39 @@
+// Small tablets and large smartphones (landscape view)
+$breakpoint-sm: 576px;
+
+// Small tablets (portrait view)
+$breakpoint-md: 768px;
+
+// Tablets and small desktops
+$breakpoint-lg: 992px;
+
+// Large tablets and desktops
+$breakpoint-xl: 1239px;
+
+// Small devices
+@mixin sm {
+  @media (max-width: #{$breakpoint-md}) {
+      @content;
+  }
+}
+
+// Medium devices
+@mixin md {
+  @media (max-width: #{$breakpoint-lg}) {
+      @content;
+  }
+}
+
+// Large devices
+@mixin lg {
+  @media (max-width: #{$breakpoint-xl}) {
+      @content;
+  }
+}
+
+// Extra large devices
+@mixin xl {
+  @media (min-width: #{$breakpoint-xl + 1}) {
+      @content;
+  }
+}

@@ -1,0 +1,96 @@
+@use 'abstracts' as abstracts;
+
+.gachi-remix-card {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--shape-medium);
+
+  &:hover:not(.gachi-remix-card-active) {
+    @include abstracts.hover(#1E1E1E, #ffffff);
+  }
+
+  &:hover:not(.gachi-remix-card-active) > .gachi-remix-card-image button {
+    display: flex;
+  }
+}
+
+.gachi-remix-card-elevated {
+  background-color: #1E1E1E;
+}
+
+img {
+  border-radius: var(--shape-medium);
+}
+
+.gachi-remix-card-active {
+  background-color: #363636;
+
+  &:hover {
+    @include abstracts.hover(#363636, #ffffff);
+  }
+}
+
+.gachi-remix-card-image {
+  width: 56px;
+  height: 56px;
+  position: relative;
+
+  button {
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    justify-self: center;
+    transform: translate(-50%, -50%);
+    background-color: rgba( var(--color-surface-rgb), .69);
+    transition: background-color .3s ease-in-out;
+
+    &:hover {
+      background-color: rgba( var(--color-surface-rgb), .9);
+    }
+  }
+}
+
+.gachi-remix-card-active > .gachi-remix-card-image button {
+  display: flex;
+}
+
+.gachi-remix-card-title {
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 16px;
+
+  h3 {
+    cursor: pointer;
+  }
+}
+
+.gachi-remix-card:hover .gachi-remix-card-title {
+  padding-right: 0;
+}
+
+.gachi-remix-card-actions {
+  display: none;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  margin-left: 16px;
+}
+
+.gachi-remix-card:hover .gachi-remix-card-actions {
+  display: flex;
+}
+
+a {
+  width: fit-content;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
