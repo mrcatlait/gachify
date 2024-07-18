@@ -5,6 +5,7 @@
     "ng": "ng",
     "bundle": "ng build && esbuild-visualizer --metadata dist/stats.json --filename dist/stats.html",
     "test:unit:ui": "vitest --ui --watch",
+    "test:integration": "start-server-and-test 'ng serve --configuration=production' http://localhost:4200 'cypress run --e2e --browser chrome'",
     "test:integration:ui": "cypress open"
   },
   "private": true,

@@ -45,11 +45,7 @@ tasks:
       - 'reports/unit'
 
   test-integration:
-    command: 
-      - 'start-server-and-test'
-      - "'ng serve --configuration=production'"
-      - 'http://localhost:4200'
-      - "'cypress run --e2e --browser chrome'"
+    command: 'npm run test:integration'
     inputs:
       - '@group(app)'
       - '@group(integration-tests)'
