@@ -27,5 +27,6 @@ import { SharedModule } from '@shared/shared.module'
 export class AppModule {
   constructor() {
     console.info(asciiArt)
+    console.log();
   }
 }
