@@ -13,6 +13,6 @@
   },
   "packageManager": "npm@9.6.0",
   "engines": {
-    "node": "18.17.0"
+    "node": "20.0.0"
   }
 }
