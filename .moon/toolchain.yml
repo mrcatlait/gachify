@@ -5,3 +5,4 @@ node:
   packageManager: 'npm'
   npm:
     version: '9.6.0'
+  dependencyVersionFormat: 'workspace'

@@ -1,0 +1,41 @@
+$schema: 'https://moonrepo.dev/schemas/project.json'
+
+stack: 'backend'
+type: 'application'
+language: 'typescript'
+
+fileGroups:
+  app:
+    - 'src/**/*'
+  configs:
+    - '*.{js,json,yml,yaml}'
+
+tasks:
+  start:
+    command: 'nest start -b swc -w'
+    local: true
+
+  build:
+    command: 'nest build'
+    inputs:
+      - '@group(app)'
+
+  lint:
+    command:
+      - 'eslint'
+      - '--fix'
+    inputs:
+      - '@group(app)'
+      - '@group(configs)'
+
+  test:
+    deps:
+      - 'test-unit'
+
+  test-unit:
+    command: 'vitest'
+    inputs:
+      - '@group(app)'
+    outputs:
+      - 'coverage'
+      - 'reports/unit'

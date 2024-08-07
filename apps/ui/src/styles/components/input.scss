@@ -1,7 +1,8 @@
 @mixin input() {
   input[type='text'],
   input[type='password'],
-  input[type='email'] {
+  input[type='email'],
+  input:-internal-autofill-selected {
     background-color: transparent;
     min-height: 56px;
     padding: 0 16px;

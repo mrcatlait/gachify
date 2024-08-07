@@ -23,9 +23,9 @@ resource "cloudflare_pages_project" "gachify_pages_project" {
   }
 
   build_config {
-    build_command       = "npm run build"
-    destination_dir     = "dist/browser"
-    root_dir            = "apps/ui"
+    build_command       = "npm run moon ui:build"
+    destination_dir     = "apps/ui/dist/browser"
+    root_dir            = ""
   }
 }
 
